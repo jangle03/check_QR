@@ -72,7 +72,7 @@ def tien_xu_ly_anh(image, clip_limit=5.0, tile_grid_size=(8, 8)):
 
     
     clahe = cv2.createCLAHE(clipLimit=clip_limit, tileGridSize=tile_grid_size)
-
+#ksjhflsd
  
     enhanced_l = clahe.apply(l)
 
