@@ -70,7 +70,7 @@ def tien_xu_ly_anh(image, clip_limit=5.0, tile_grid_size=(8, 8)):
     lab_image = cv2.cvtColor(adjusted_image, cv2.COLOR_BGR2LAB)
     l, a, b = cv2.split(lab_image)
 
-    # Tạo bộ cân bằng tương phản giới hạn hàm
+    
     clahe = cv2.createCLAHE(clipLimit=clip_limit, tileGridSize=tile_grid_size)
 
     # Áp dụng cân bằng tương phản giới hạn hàm vào kênh L
