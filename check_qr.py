@@ -73,7 +73,7 @@ def tien_xu_ly_anh(image, clip_limit=5.0, tile_grid_size=(8, 8)):
     
     clahe = cv2.createCLAHE(clipLimit=clip_limit, tileGridSize=tile_grid_size)
 
-    # Áp dụng cân bằng tương phản giới hạn hàm vào kênh L
+ 
     enhanced_l = clahe.apply(l)
 
     updated_lab_image = cv2.merge((enhanced_l, a, b))
